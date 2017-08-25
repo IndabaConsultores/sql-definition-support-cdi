@@ -28,3 +28,17 @@ public class SomeRandomService
    - Look for SQLD files in the classpath
    - Resolve injection point providing the defined querie value
    
+# First proposal
+
+@QueryResolver qualifier
+
+used in dis way
+```java
+@Inject
+@QueryResolver(name="query_key")
+private String query;
+
+@Inject
+@QueryResolver(name="query_key")
+private QueryDefinition query;
+```
