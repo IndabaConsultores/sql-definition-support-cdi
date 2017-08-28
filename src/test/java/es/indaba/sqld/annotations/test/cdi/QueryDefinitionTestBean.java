@@ -13,9 +13,12 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
 import es.indaba.sqld.QueryDefinition;
+import es.indaba.sqld.annotations.api.QueryRepository;
 import es.indaba.sqld.annotations.api.QueryResolver;
 
 @ApplicationScoped
+@QueryRepository("es.indaba.sqld.test.sqld")
+@QueryRepository("es.indaba.sqld.test.yaml")
 public class QueryDefinitionTestBean {
 
     @Inject
