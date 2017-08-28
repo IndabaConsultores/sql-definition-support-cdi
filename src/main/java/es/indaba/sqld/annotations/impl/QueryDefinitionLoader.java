@@ -16,7 +16,6 @@ import javax.enterprise.event.Observes;
 
 import es.indaba.sqld.QueryDefinitionsHolder;
 import es.indaba.sqld.loader.SQLDClassPathLoader;
-
 @ApplicationScoped
 public class QueryDefinitionLoader {
     public void init(@Observes @Initialized(ApplicationScoped.class) Object init) {
