@@ -32,7 +32,7 @@ public class SomeRandomService
 
 @QueryResolver qualifier
 
-used in dis way
+used in this way
 ```java
 @Inject
 @QueryResolver(name="query_key")
@@ -42,3 +42,7 @@ private String query;
 @QueryResolver(name="query_key")
 private QueryDefinition query;
 ```
+
+Pending work: 
+ - Startup customization by restricting package name for classpath *.sqld search
+
