@@ -1,4 +1,4 @@
-package es.indaba.sqld.annotations.api;
+package es.indaba.sqld.annotations.cdi.api;
 
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.TYPE;

@@ -7,7 +7,7 @@
  * not, see <http://www.gnu.org/licenses/>
  * 
  *******************************************************************************/
-package es.indaba.sqld.annotations.impl;
+package es.indaba.sqld.annotations.cdi.impl;
 
 import java.lang.annotation.Annotation;
 
@@ -20,7 +20,7 @@ import org.apache.deltaspike.core.util.BeanUtils;
 
 import es.indaba.sqld.QueryDefinition;
 import es.indaba.sqld.QueryDefinitionsHolder;
-import es.indaba.sqld.annotations.api.QueryResolver;
+import es.indaba.sqld.annotations.cdi.api.QueryResolver;
 
 @ApplicationScoped
 public class QueryDefinitionProducer {

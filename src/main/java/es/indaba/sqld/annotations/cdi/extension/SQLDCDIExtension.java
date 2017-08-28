@@ -1,4 +1,4 @@
-package es.indaba.sqld.annotations.extension;
+package es.indaba.sqld.annotations.cdi.extension;
 
 import java.lang.annotation.Annotation;
 import java.util.Arrays;
@@ -15,8 +15,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import es.indaba.sqld.QueryDefinitionsHolder;
-import es.indaba.sqld.annotations.api.QueryRepositories;
-import es.indaba.sqld.annotations.api.QueryRepository;
+import es.indaba.sqld.annotations.cdi.api.QueryRepositories;
+import es.indaba.sqld.annotations.cdi.api.QueryRepository;
 import es.indaba.sqld.loader.SQLDClassPathLoader;
 
 public class SQLDCDIExtension implements javax.enterprise.inject.spi.Extension {

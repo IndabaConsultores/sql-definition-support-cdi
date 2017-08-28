@@ -1,4 +1,4 @@
-package es.indaba.sqld.annotations.api;
+package es.indaba.sqld.annotations.cdi.api;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
