@@ -75,12 +75,6 @@
         </dependency>
 
         <dependency>
-            <groupId>jboss</groupId>
-            <artifactId>javassist</artifactId>
-            <version>${javassist.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.apache.deltaspike.core</groupId>
             <artifactId>deltaspike-core-api</artifactId>
             <version>${deltaspike.version}</version>
