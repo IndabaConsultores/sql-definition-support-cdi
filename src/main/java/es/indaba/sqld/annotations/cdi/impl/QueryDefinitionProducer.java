@@ -19,11 +19,9 @@ import javax.enterprise.inject.spi.InjectionPoint;
 import org.apache.deltaspike.core.api.provider.BeanProvider;
 import org.apache.deltaspike.core.util.BeanUtils;
 
-import es.indaba.sqld.QueryDefinitionsStaticHolder;
 import es.indaba.sqld.annotations.cdi.api.QueryResolver;
 import es.indaba.sqld.api.QueryDefinition;
 import es.indaba.sqld.api.QueryDefinitionRepository;
-import es.indaba.sqld.impl.QueryDefinitionStaticImpl;
 
 @ApplicationScoped
 public class QueryDefinitionProducer {
@@ -58,7 +56,7 @@ public class QueryDefinitionProducer {
         QueryDefinitionRepository repository =
                 BeanProvider.getContextualReference(QueryDefinitionRepository.class, false);
 
-        return new QueryDefinitionContextualImpl(queryResolver.name(), repository.getQuery(queryResolver.name()));
+        return new QueryDefinition(queryResolver.name(), repository.getQuery(queryResolver.name()));
     }
 
     /**

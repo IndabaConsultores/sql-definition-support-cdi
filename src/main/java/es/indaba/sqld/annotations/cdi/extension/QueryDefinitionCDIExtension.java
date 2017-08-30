@@ -24,9 +24,9 @@ import es.indaba.sqld.annotations.cdi.api.QueryRepository;
 import es.indaba.sqld.api.QueryDefinitionRepository;
 import es.indaba.sqld.impl.loader.QueryDefinitionClassPathLoader;
 
-public class SQLDCDIExtension implements javax.enterprise.inject.spi.Extension {
+public class QueryDefinitionCDIExtension implements javax.enterprise.inject.spi.Extension {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(SQLDCDIExtension.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(QueryDefinitionCDIExtension.class);
 
     private Bean<QueryDefinitionRepository> bean;
 
