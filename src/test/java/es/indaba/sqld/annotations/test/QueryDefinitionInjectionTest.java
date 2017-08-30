@@ -13,8 +13,8 @@ import org.apache.deltaspike.core.api.provider.BeanProvider;
 import org.junit.Assert;
 import org.junit.Test;
 
-import es.indaba.sqld.QueryDefinition;
 import es.indaba.sqld.annotations.test.cdi.QueryDefinitionTestBean;
+import es.indaba.sqld.api.QueryDefinition;
 
 public class QueryDefinitionInjectionTest extends AbstractTest {
 

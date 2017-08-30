@@ -25,9 +25,10 @@ import javax.inject.Qualifier;
 @Documented
 @Qualifier
 public @interface QueryResolver {
-    
+
     /**
      * Name/key of the query.
+     * 
      * @return name of the property
      */
     @Nonbinding

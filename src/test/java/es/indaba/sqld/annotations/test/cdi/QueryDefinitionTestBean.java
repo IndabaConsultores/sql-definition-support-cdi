@@ -12,9 +12,9 @@ package es.indaba.sqld.annotations.test.cdi;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
-import es.indaba.sqld.QueryDefinition;
 import es.indaba.sqld.annotations.cdi.api.QueryRepository;
 import es.indaba.sqld.annotations.cdi.api.QueryResolver;
+import es.indaba.sqld.api.QueryDefinition;
 
 @ApplicationScoped
 @QueryRepository("es.indaba.sqld.test.sqld")

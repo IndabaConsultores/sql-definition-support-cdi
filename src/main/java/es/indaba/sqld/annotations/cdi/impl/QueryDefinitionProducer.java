@@ -16,11 +16,14 @@ import javax.enterprise.context.Dependent;
 import javax.enterprise.inject.Produces;
 import javax.enterprise.inject.spi.InjectionPoint;
 
+import org.apache.deltaspike.core.api.provider.BeanProvider;
 import org.apache.deltaspike.core.util.BeanUtils;
 
-import es.indaba.sqld.QueryDefinition;
-import es.indaba.sqld.QueryDefinitionsHolder;
+import es.indaba.sqld.QueryDefinitionsStaticHolder;
 import es.indaba.sqld.annotations.cdi.api.QueryResolver;
+import es.indaba.sqld.api.QueryDefinition;
+import es.indaba.sqld.api.QueryDefinitionRepository;
+import es.indaba.sqld.impl.QueryDefinitionStaticImpl;
 
 @ApplicationScoped
 public class QueryDefinitionProducer {
@@ -35,7 +38,10 @@ public class QueryDefinitionProducer {
             throw new IllegalStateException("producer method called without @QueryResolver being present!");
         }
 
-        return QueryDefinitionsHolder.getQueryAsString(queryResolver.name());
+        QueryDefinitionRepository repository =
+                BeanProvider.getContextualReference(QueryDefinitionRepository.class, false);
+
+        return repository.getQuery(queryResolver.name());
 
     }
 
@@ -49,7 +55,10 @@ public class QueryDefinitionProducer {
             throw new IllegalStateException("producer method called without @QueryResolver being present!");
         }
 
-        return new QueryDefinition(queryResolver.name());
+        QueryDefinitionRepository repository =
+                BeanProvider.getContextualReference(QueryDefinitionRepository.class, false);
+
+        return new QueryDefinitionContextualImpl(queryResolver.name(), repository.getQuery(queryResolver.name()));
     }
 
     /**
