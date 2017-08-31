@@ -27,7 +27,7 @@ public class ContextualFactory implements ContextualLifecycle<QueryDefinitionRep
     @Override
     public void destroy(Bean<QueryDefinitionRepository> bean, QueryDefinitionRepository instance,
             CreationalContext<QueryDefinitionRepository> creationalContext) {
-        // TODO Auto-generated method stub
+        // Required by the interface implementation
 
     }
 }

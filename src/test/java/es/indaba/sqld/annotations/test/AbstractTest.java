@@ -17,8 +17,7 @@ import org.apache.deltaspike.cdise.api.ContextControl;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
-
-public class AbstractTest {
+public abstract class AbstractTest {
 
     private static CdiContainer cdiContainer;
     private static ContextControl contextControl;

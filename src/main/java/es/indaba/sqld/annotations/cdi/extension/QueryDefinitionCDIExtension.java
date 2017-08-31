@@ -56,7 +56,7 @@ public class QueryDefinitionCDIExtension implements javax.enterprise.inject.spi.
         }
     }
 
-    public void afterBeanDiscovery(@Observes final AfterBeanDiscovery abd, final BeanManager bm) {
+    public void afterBeanDiscovery(@Observes final AfterBeanDiscovery abd) {
         if (bean != null) {
             abd.addBean(bean);
             bean = null;
@@ -64,7 +64,7 @@ public class QueryDefinitionCDIExtension implements javax.enterprise.inject.spi.
 
     }
 
-    public void AfterDeploymentValidation(@Observes final AfterDeploymentValidation adv, final BeanManager bm) {
+    public void afterDeploymentValidation(@Observes final AfterDeploymentValidation adv) {
         if (!repositoryPrefixes.isEmpty()) {
 
             final QueryDefinitionRepository repository =
