@@ -4,7 +4,10 @@
     <groupId>es.indaba</groupId>
     <artifactId>sql-definition-support-cdi</artifactId>
     <version>1.0.0</version>
+    <name>sql-definition-support-cdi</name>
     <description>A CDI extension SQL queries externalization</description>
+    
+    <url>https://github.com/IndabaConsultores/sql-definition-support-cdi</url>
 
     <organization>
         <name>Indaba</name>
