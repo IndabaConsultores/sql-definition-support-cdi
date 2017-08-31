@@ -51,3 +51,11 @@ private String query;
 @QueryResolver(name="query_key")
 private QueryDefinition query;
 ```
+
+## Contribute
+Pull requests are welcomed!!
+
+This is an open debate if you find this support unnecessary or you think there is a better way to manage the SQL queries in code. Please open an issue and we will be please to discuss about it. 
+
+## Licenses
+This work is distributed under LGPL v3.
