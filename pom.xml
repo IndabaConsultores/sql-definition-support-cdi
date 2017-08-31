@@ -18,6 +18,11 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+    
+    <scm>
+        <url>https://github.com/IndabaConsultores/sql-definition-support-cdi</url>
+        <connection>https://github.com/IndabaConsultores/sql-definition-support-cdi.git</connection>
+    </scm>
 
     <developers>
         <developer>
