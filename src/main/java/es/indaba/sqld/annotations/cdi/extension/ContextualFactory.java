@@ -13,14 +13,10 @@ import javax.enterprise.context.spi.CreationalContext;
 import javax.enterprise.inject.spi.Bean;
 
 import org.apache.deltaspike.core.util.metadata.builder.ContextualLifecycle;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import es.indaba.sqld.api.QueryDefinitionRepository;
 
 public class ContextualFactory implements ContextualLifecycle<QueryDefinitionRepository> {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(ContextualFactory.class);
 
     @Override
     public QueryDefinitionRepository create(Bean<QueryDefinitionRepository> bean,
