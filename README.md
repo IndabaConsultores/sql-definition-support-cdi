@@ -1,3 +1,5 @@
+[![Travis-CI](https://travis-ci.org/IndabaConsultores/sql-definition-support-cdi.svg?branch=master)](https://travis-ci.org/IndabaConsultores/sql-definition-support-cdi) [![Sonarcloud](https://sonarcloud.io/api/badges/gate?key=es.indaba:sql-definition-support-cdi)](https://sonarcloud.io/dashboard?id=es.indaba:sql-definition-support-cdi) [![SonarCloud Technical Debt](https://sonarcloud.io/api/badges/measure?key=es.indaba:sql-definition-support-cdi&metric=sqale_debt_ratio)](https://sonarcloud.io/dashboard?id=es.indaba:sql-definition-support-cdi) [![SonarCloud Coverage](https://sonarcloud.io/api/badges/measure?key=es.indaba:sql-definition-support-cdi&metric=coverage)](https://sonarcloud.io/dashboard?id=es.indaba:sql-definition-support-cdi)
+
 # SQL Definition Support for CDI
 
 ## IDEA
