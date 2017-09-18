@@ -46,11 +46,11 @@ public class QueryDefinitionTestBean {
 
 ```java
 @Inject
-@QueryResolver(name="query_key")
+@QueryResolver("query_key")
 private String query;
 
 @Inject
-@QueryResolver(name="query_key")
+@QueryResolver("query_key")
 private QueryDefinition query;
 ```
 
