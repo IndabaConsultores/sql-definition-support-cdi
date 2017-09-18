@@ -22,15 +22,15 @@ import es.indaba.sqld.api.QueryDefinition;
 public class QueryDefinitionTestBean {
 
     @Inject
-    @QueryResolver(name = "QUERY1")
+    @QueryResolver("QUERY1")
     private String query1AsString;
 
     @Inject
-    @QueryResolver(name = "QUERY2")
+    @QueryResolver("QUERY2")
     private String query2AsString;
 
     @Inject
-    @QueryResolver(name = "QUERY1")
+    @QueryResolver("QUERY1")
     private QueryDefinition query1AsQueryDefinition;
 
     public String getQuery1AsString() {

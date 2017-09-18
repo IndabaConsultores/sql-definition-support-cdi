@@ -28,7 +28,7 @@ public class QueryDefinitionProducer {
 
     @Produces
     @Dependent
-    @QueryResolver(name = "ignore")
+    @QueryResolver("ignore")
     public String produceQueryString(InjectionPoint injectionPoint) {
         QueryResolver queryResolver = getAnnotation(injectionPoint, QueryResolver.class);
 
@@ -39,13 +39,13 @@ public class QueryDefinitionProducer {
         QueryDefinitionRepository repository =
                 BeanProvider.getContextualReference(QueryDefinitionRepository.class, false);
 
-        return repository.getQuery(queryResolver.name());
+        return repository.getQuery(queryResolver.value());
 
     }
 
     @Produces
     @Dependent
-    @QueryResolver(name = "ignore")
+    @QueryResolver("ignore")
     public QueryDefinition produceQueryDefinition(InjectionPoint injectionPoint) {
         QueryResolver queryResolver = getAnnotation(injectionPoint, QueryResolver.class);
 
@@ -56,7 +56,7 @@ public class QueryDefinitionProducer {
         QueryDefinitionRepository repository =
                 BeanProvider.getContextualReference(QueryDefinitionRepository.class, false);
 
-        return new QueryDefinition(queryResolver.name(), repository.getQuery(queryResolver.name()));
+        return new QueryDefinition(queryResolver.value(), repository.getQuery(queryResolver.value()));
     }
 
     /**
