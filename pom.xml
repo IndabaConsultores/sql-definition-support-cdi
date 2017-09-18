@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>es.indaba</groupId>
     <artifactId>sql-definition-support-cdi</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>sql-definition-support-cdi</name>
     <description>A CDI extension SQL queries externalization</description>
     
