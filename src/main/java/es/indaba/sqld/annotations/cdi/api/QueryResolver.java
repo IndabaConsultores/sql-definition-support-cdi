@@ -32,5 +32,5 @@ public @interface QueryResolver {
      * @return name of the property
      */
     @Nonbinding
-    String name();
+    String value();
 }
